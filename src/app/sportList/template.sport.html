@@ -1,0 +1,28 @@
+
+<h2>{{title}}</h2>
+    <table class="table table-hover">
+    	<thead>
+      		<tr>
+        	<th>miejsce</th>
+        	<th>imię i nazwisko</th>
+        	<th>suma pieniędzy</th>
+        	<th>dyscyplina sportowa</th>
+        	</tr>
+    	</thead>
+    	<tbody>
+      		<tr *ngFor="let sport of sports">
+	        	<td>
+	        		{{sport.rank}}
+	        	</td>
+	        	<td>
+	        		{{sport.name}}
+	        	</td>
+	        	<td>
+	        		{{sport.value}}
+	        	</td>
+	        	<td>
+	        		{{sport.play}}
+	        	</td>
+      		</tr>
+      	</tbody>
+    </table>
